@@ -1,0 +1,9 @@
+Format-Specification: http://anonscm.debian.org/viewvc/dep/web/deps/dep5/copyright-format.xml?revision=248
+Upstream-Contact: Oxford University Computing Services <infodev@oucs.ox.ac.uk>
+Source: https://github.com/oucs/django-conneg
+
+Files: *
+Copyright: 2011, Jannis Leidel <jannis@leidel.info>
+License: BSD
+
+

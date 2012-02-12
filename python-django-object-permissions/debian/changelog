@@ -1,0 +1,11 @@
+python-django-object-permissions (1.4.2-2) unstable; urgency=low
+
+  * Non-maintainer upload.
+
+ -- Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>  Sat, 11 Feb 2012 14:40:17 +0000
+
+python-django-object-permissions (1.4.2-1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>  Sat, 11 Feb 2012 11:57:23 +0000
