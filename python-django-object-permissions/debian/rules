@@ -3,4 +3,7 @@
 %:
 	dh $@ --with python2
 
-#override_dh_
+override_dh_clean:
+	dh_clean
+	rm -rf build django_object_permissions.egg-info
+
