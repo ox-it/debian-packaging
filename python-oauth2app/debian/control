@@ -1,0 +1,22 @@
+Source: python-oauth2app
+Section: python
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@it.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~),
+               python-all,
+               python-support,
+               python-setuptools,
+               python-django (>= 1.2)
+Standards-Version: 3.8.4
+X-Python-Version: >= 2.6
+Homepage: https://github.com/hiidef/oauth2app
+Vcs-Git: git://github.com/hiidef/oauth2app.git
+
+Package: python-oauth2app
+Section: python
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-django (>= 1.2)
+Description: OAuth2 for Django
+ 

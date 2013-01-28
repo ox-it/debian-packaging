@@ -1,0 +1,5 @@
+python-oauth2app (0.3.0-1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@it.ox.ac.uk>  Sat, 2 Feb 2013 20:21:21 +0000
