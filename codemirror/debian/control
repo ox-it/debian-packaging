@@ -1,0 +1,21 @@
+Source: codemirror
+Section: javascript
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@it.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~),
+               yui-compressor
+Standards-Version: 3.8.4
+Homepage: http://codemirror.net/
+Vcs-Git: git://github.com/marijnh/CodeMirror.git
+
+Package: libjs-codemirror
+Section: javascript
+Architecture: all
+Depends: ${misc:Depends}
+Description: In-browser code editing made bearable
+ CodeMirror is a JavaScript component that provides a code editor in the
+ browser. When a mode is available for the language you are coding in, it will
+ color your code, and optionally help with indentation.
+ A rich programming API and a CSS theming system are available for customizing
+ CodeMirror to fit your application, and extending it with new functionality.
+ 
