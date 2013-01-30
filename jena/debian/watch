@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/-(alpha|beta|incubating)/~$1/" \
+  http://www.apache.org/dist/jena/source/ \
+  jena-(\d.*)-source-release.zip debian debian/get-orig.sh
