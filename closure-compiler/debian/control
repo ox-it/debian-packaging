@@ -1,0 +1,20 @@
+Source: closure-compiler
+Section: java
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@it.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: https://developers.google.com/closure/compiler/
+
+Package: libclosure-compiler-java
+Section: java
+Architecture: all
+Depends: ${misc:Depends}
+Description: A tool for making JavaScript download and run faster.
+ The Closure Compiler is a tool for making JavaScript download and run faster.
+ It is a true compiler for JavaScript. Instead of compiling from a source
+ language to machine code, it compiles from JavaScript to better JavaScript. It
+ parses your JavaScript, analyzes it, removes dead code and rewrites and
+ minimizes what's left. It also checks syntax, variable references, and types,
+ and warns about common JavaScript pitfalls. 
+ 

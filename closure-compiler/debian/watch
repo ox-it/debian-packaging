@@ -1,0 +1,3 @@
+version=3
+opts=downloadurlmangle=s/code.google.com\/\/// \
+  http://code.google.com/p/closure-compiler/downloads/list?can=1 //closure-compiler\.googlecode\.com/files/compiler-(\d*)\.tar\.gz

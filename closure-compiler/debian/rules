@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+DEBVERS   := $(shell dpkg-parsechangelog | sed -n 's/^Version: \(.*\)-[^-]*$$/\1/p')
+VERSION   := $(shell echo '$(DEBVERS)' | sed -e 's/[+-].*//' -e 's/\.dfsg.*//' -e 's/~//g')
+
+%:
+	dh $@
+
+get-orig.tar:
+	uscan --force
+	tar -xf ../closure-compiler_${VERSION}.orig.tar.gz 
+

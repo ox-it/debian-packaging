@@ -1,0 +1,2 @@
+bin/closure /usr/bin/
+compiler.jar /usr/share/closure-compiler/
