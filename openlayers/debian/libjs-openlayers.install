@@ -1,0 +1,4 @@
+OpenLayers*.js /usr/share/javascript/openlayers
+lib /usr/share/javascript/openlayers
+img /usr/share/javascript/openlayers
+theme /usr/share/javascript/openlayers
