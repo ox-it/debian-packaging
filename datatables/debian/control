@@ -1,0 +1,15 @@
+Source: datatables
+Section: javascript
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@it.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~),
+               yui-compressor
+Standards-Version: 3.8.4
+Homepage: http://www.datatables.net/
+
+Package: libjs-datatables
+Section: javascript
+Architecture: all
+Depends: ${misc:Depends}
+Description: Adds advanced interaction controls to any HTML table.
+ 

@@ -1,0 +1,5 @@
+datatables (1.9.4-1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@it.ox.ac.uk>  Sun, 3 Feb 2013 14:47:57 +0000

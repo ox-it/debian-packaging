@@ -16,7 +16,6 @@ Package: python-oauth2app
 Section: python
 Architecture: all
 Depends: ${misc:Depends},
-         ${python:Depends},
          python-django (>= 1.2)
 Description: OAuth2 for Django
  
