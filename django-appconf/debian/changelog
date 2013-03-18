@@ -1,0 +1,5 @@
+django-appconf (0.5) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>  Mon, 18 Feb 2013 09:40:08 +0000

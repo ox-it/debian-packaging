@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2
+
+get-orig.tar:
+	wget https://github.com/ox-it/django-user-accounts/archive/e283d16e1e1bc399b388066b91e9c9384fc96994.tar.gz -O ../django-user-accounts_1.0~b9.orig.tar.gz
+	tar xf ../django-user-accounts_1.0~b9.orig.tar.gz --strip-components=1
+

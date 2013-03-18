@@ -1,0 +1,5 @@
+django-user-accounts (1.0~b9) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>  Mon, 18 Feb 2013 09:16:01 +0000
