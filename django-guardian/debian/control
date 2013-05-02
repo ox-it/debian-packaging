@@ -1,0 +1,21 @@
+Source: django-guardian
+Section: python
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~),
+               python-all,
+               python-support,
+               python-setuptools
+Standards-Version: 3.8.4
+X-Python-Version: >= 2.6
+Homepage: https://github.com/lukaszb/django-guardian
+Vcs-Git: git://github.com/lukaszb/django-guardian.git
+
+Package: python-django-guardian
+Section: python
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-django
+Description: Implementation of per object permissions for Django 1.2 or later.
+ 

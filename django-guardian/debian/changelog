@@ -1,0 +1,5 @@
+django-guardian (1.1.0.beta-1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>  Thu, 2 May 2013 09:10:55 +0100
