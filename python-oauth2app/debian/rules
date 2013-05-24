@@ -11,5 +11,5 @@ override_dh_auto_test:
 	#django-admin test --settings=django_hosts.tests.settings --pythonpath=.
 
 get-orig.tar:
-	wget https://github.com/hiidef/oauth2app/archive/f8205e2146477224a666c03bf115ddf3ff7610ff.tar.gz -O ../python-oauth2app_0.3.0.orig.tar.gz
+	wget https://github.com/hiidef/ox-it/archive/4fcfe8f11ce11c4fdc0f2e50025416b133d80311.tar.gz -O ../python-oauth2app_0.3.1.orig.tar.gz
         tar xf ../python-oauth2app_0.3.0.orig.tar.gz --strip-components=1

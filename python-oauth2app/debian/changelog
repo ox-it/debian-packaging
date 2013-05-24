@@ -1,3 +1,10 @@
+python-oauth2app (0.3.1-1) unstable; urgency=low
+
+  * Django 1.5.1 support
+  * More robust handling of malformed Authorization headers
+
+ -- Alexander Dutton <alexander.dutton@it.ox.ac.uk>  Fri, 24 May 2013 14:23:19 +0100
+
 python-oauth2app (0.3.0-1) unstable; urgency=low
 
   * Initial packaging
