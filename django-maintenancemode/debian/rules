@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+VERSION := $(shell parsechangelog --all --format rfc822 | grep-dctrl -esVersion . | colrm 1 9)
+SOURCE_VERSION := $(shell echo ${VERSION} | grep "^[0-9.a-z]*" -o)
+
+%:
+	dh $@ --with python2
+
+get-orig.tar:
+	uscan --download-current-version
+	tar xf ../django-maintenancemode_${SOURCE_VERSION}.orig.tar.gz --strip-components=1
+
