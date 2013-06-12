@@ -1,0 +1,5 @@
+django-dirtyfields (0.1-1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@it.ox.ac.uk>  Wed, 12 Jun 2013 16:26:57 +0100
