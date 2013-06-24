@@ -1,0 +1,2 @@
+version=3
+http://pypi.python.org/packages/source/d/django-statsd-mozilla/django-statsd-mozilla-(.*).tar.gz

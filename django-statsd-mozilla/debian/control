@@ -1,0 +1,21 @@
+Source: django-statsd-mozilla
+Section: python
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@it.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~),
+               python-all,
+               python-support,
+               python-setuptools
+Standards-Version: 3.8.4
+X-Python-Version: >= 2.6
+Homepage: https://github.com/andymckay/django-statsd
+Vcs-Git: git://github.com/andymckay/django-statsd.git
+
+Package: python-django-statsd-mozilla
+Section: python
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         python-django
+Description: Django interface with statsd
+ 
