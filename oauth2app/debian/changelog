@@ -1,4 +1,4 @@
-python-oauth2app (0.3.1-1) unstable; urgency=low
+oauth2app (0.3.1-3) unstable; urgency=low
 
   * Django 1.5.1 support
   * More robust handling of malformed Authorization headers

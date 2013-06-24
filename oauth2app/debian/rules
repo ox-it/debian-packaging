@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+VERSION := $(shell parsechangelog --all --format rfc822 | grep-dctrl -esVersion . | colrm 1 9)
+SOURCE_VERSION := $(shell echo ${VERSION} | grep "^[0-9.]*" -o)
+
+%:
+	dh $@ --with python2
+
+override_dh_clean:
+	dh_clean
+	#rm django_hosts.egg-info versiontools* -rf
+
+override_dh_auto_test:
+	#django-admin test --settings=django_hosts.tests.settings --pythonpath=.
+
+get-orig.tar:
+	wget https://github.com/ox-it/oauth2app/archive/ff0f341f6f30497a1aa495368ae1bc30ae9bf5eb.tar.gz -O ../oauth2app_${SOURCE_VERSION}.orig.tar.gz
+	tar xf ../oauth2app_${SOURCE_VERSION}.orig.tar.gz --strip-components=1

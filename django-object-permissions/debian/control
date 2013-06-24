@@ -1,4 +1,4 @@
-Source: python-django-object-permissions
+Source: django-object-permissions
 Section: python
 Priority: extra
 Maintainer: Alexander Dutton <alexander.dutton@oucs.ox.ac.uk>
