@@ -1,0 +1,5 @@
+pystatsd (2.0.1) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@it.ox.ac.uk>  Mon, 24 Jun 2013 10:06:44 +0100
