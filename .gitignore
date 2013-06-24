@@ -5,3 +5,16 @@
 *.deb
 *.build
 */setup.py
+
+# Ignore every second-level thing, save for debian directories
+/*/*
+!/*/debian/
+
+# And some things within debian directories
+/*/debian/files
+/*/debian/*.debhelper.log
+/*/debian/*.postinst.debhelper
+/*/debian/*.prerm.debhelper
+/*/debian/*.substvars
+/*/debian/*/
+!/*/debian/source/
