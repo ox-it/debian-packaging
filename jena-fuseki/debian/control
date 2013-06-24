@@ -1,0 +1,15 @@
+Source: jena-fuseki
+Section: java
+Priority: extra
+Maintainer: Alexander Dutton <alexander.dutton@it.ox.ac.uk>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.8.4
+Homepage: http://jena.apache.org/
+
+Package: libjena-fuseki-java
+Section: java
+Architecture: all
+Depends: ${misc:Depends}
+Recommends: ruby
+Description: The Jena SPARQL server.
+ 

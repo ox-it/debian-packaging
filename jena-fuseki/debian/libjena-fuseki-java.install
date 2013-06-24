@@ -1,0 +1,9 @@
+fuseki-server /usr/share/java/
+fuseki-server.jar /usr/share/java/
+s-delete /usr/bin/
+s-head /usr/bin/
+s-get /usr/bin/
+s-put /usr/bin/
+s-query /usr/bin/
+s-update /usr/bin/
+s-update-form /usr/bin/

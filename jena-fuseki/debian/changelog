@@ -1,0 +1,5 @@
+jena-fuseki (0.2.7) unstable; urgency=low
+
+  * Initial packaging
+
+ -- Alexander Dutton <alexander.dutton@it.ox.ac.uk>  Mon, 24 Jun 2013 09:03:38 +0100
