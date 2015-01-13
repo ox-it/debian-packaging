@@ -1,0 +1,41 @@
+#!/usr/bin/python
+
+import os
+import subprocess
+import xml.etree.ElementTree as ET
+
+try:
+    from termcolor import colored
+except ImportError:
+    colored = lambda text, *args, **kwargs : text
+
+ignored = set(open('ignore-out-of-date').read().split())
+
+for name in os.listdir('.'):
+    if not os.path.isdir(name) or name == '.git':
+        continue
+
+    uscan = subprocess.Popen(['uscan', '--no-download', '--dehs'], cwd=name, stdout=subprocess.PIPE)
+    uscan.wait()
+
+    dehs = ET.parse(uscan.stdout).getroot()
+
+    error = dehs.find('error')
+    warning = dehs.find('warnings')
+
+    if error is not None:
+        print colored(name.ljust(40), 'magenta') + " : " + ' '.join(error.text.split())
+    elif warning is not None:
+        print colored(name.ljust(40), 'yellow') + " : " + ' '.join(warning.text.split())
+    elif not len(dehs):
+        print name.ljust(40) + " : no watch file"
+
+    else:
+        current = dehs.find('debian-mangled-uversion').text
+        upstream = dehs.find('upstream-version').text
+
+        if current != upstream:
+            print colored(name.ljust(40), 'red', attrs=['dark' if name in ignored else 'bold']) + " : " + current.ljust(10) + " : " + upstream
+        else:
+            print colored(name.ljust(40), 'green') + " : " + current.ljust(10) + " : " + upstream
+
